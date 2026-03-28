@@ -6,6 +6,16 @@ body {
     max-width: 1400px;
     margin: 0 auto;
 }
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    opacity: 0.9;
+    gap: 20px;
+}
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 header {
     background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(../images/london.jpg);
     background-repeat: no-repeat;
@@ -53,21 +63,39 @@ header a:hover {
     transition: all 0.3s ease-in-out;
 }
 footer {
-    background-color: #2e2e2e;
+    background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(../images/london-footer.jpg);
     color: white;
-    text-align: center;
-    padding: 20px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+footer h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 20px;
+}
+footer ul {
+    padding: 0;
+    color: white;
 }
 footer a {
+    list-style: none;
     color: rgb(245, 215, 215);
-    text-decoration: none;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 } 
 footer a:hover {
     color: rgb(228, 170, 170);
     transition: all 0.3s ease-in-out;
 }
-@media (max-width: 900px) {
+@media (max-width: 960px) {
     header {
         padding: 60px 0;
     }
