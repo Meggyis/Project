@@ -15,10 +15,63 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 .grid-3columns {
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.text-center {
+    text-align: center;
+}
+.card {
+    font-weight: 400;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 32px;
+}
+.card img {
+    width: 100%;
+    padding: 0;
+    border-radius: 6px;
+    height: 200px;
+    object-fit: cover;
+}
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+}
+
+.card ul li {
+    padding: 4px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.card ul li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #ceb4b4;
+}
+.btn {
+    display: inline-block;
+    background-color: #ceb4b4;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+
+.btn:hover {
+    background-color: #2e2e2e;
+    transition: all 0.3s ease-in-out;
 }
 section {
-    max-width: 1200px;
+    max-width: 100%;
     padding: 100px 0;
 }
 section img {
@@ -26,6 +79,10 @@ section img {
     height: auto;
     border-radius: 6px;
     padding:0 80px;
+}
+section.secondary {
+    background: #ceb4b4;
+    padding: 80px 0;
 }
 header {
     background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(../images/london.jpg);
@@ -106,8 +163,6 @@ footer {
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
-    
-
 }
 footer h3 {
     font-weight: 700;
@@ -175,6 +230,10 @@ footer a:hover {
     }
     footer ul {
         text-align: center;
+    }
+    .card img {
+        height: 150px;
+        object-fit: cover;
     }
 }
 
