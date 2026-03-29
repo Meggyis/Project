@@ -22,9 +22,10 @@ section {
     padding: 100px 0;
 }
 section img {
-    width: 100%;
+    width: 70%;
     height: auto;
     border-radius: 6px;
+    padding:0 80px;
 }
 header {
     background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(../images/london.jpg);
@@ -171,6 +172,9 @@ footer a:hover {
         width: 40%;
         height: auto;
         margin: 20px auto;
+    }
+    footer ul {
+        text-align: center;
     }
 }
 
