@@ -9,12 +9,22 @@ body {
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
-    opacity: 0.9;
-    gap: 20px;
+    grid-gap: 64px;
+}
+.grid-2columns {
+    grid-template-columns: 1fr 1fr;
+}
+.grid-3columns {
+    grid-template-columns: 1fr 2fr 2fr;
 }
 section {
     max-width: 1200px;
-    margin: 0 auto;
+    padding: 100px 0;
+}
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
 }
 header {
     background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(../images/london.jpg);
@@ -62,12 +72,41 @@ header a:hover {
     color: black;
     transition: all 0.3s ease-in-out;
 }
+main {
+    background-color: white;
+
+}
+main h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    opacity: 0.8;
+    color: #2e2e2e;
+    text-transform: uppercase;
+    margin: 0;
+}
+main h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    color: #2e2e2e;
+    margin: 10px 0;
+}
+main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2e2e2e;
+}
 footer {
     background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(../images/london-footer.jpg);
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0;
+    
+
 }
 footer h3 {
     font-weight: 700;
@@ -83,9 +122,13 @@ footer p {
 footer ul {
     padding: 0;
     color: white;
+    list-style: none;
+}
+footer section {
+    padding: 100px 64px;
 }
 footer a {
-    list-style: none;
+
     color: rgb(245, 215, 215);
     font-weight: 400;
     font-size: 16px;
@@ -112,4 +155,22 @@ footer a:hover {
         padding: 12px 24px;
         font-size: 12px;
     }
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+    section {
+        padding: 30px;
+        margin:auto;
+    }
+    section h2, h3 {
+       text-align: center;
+        font-size: 14px;
+    }
+    section img {
+        width: 40%;
+        height: auto;
+        margin: 20px auto;
+    }
 }
+
